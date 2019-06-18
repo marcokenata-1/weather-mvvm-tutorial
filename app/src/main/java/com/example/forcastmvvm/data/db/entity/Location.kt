@@ -1,4 +1,4 @@
-package com.example.forcastmvvm.data.response
+package com.example.forcastmvvm.data.db.entity
 
 
 import com.google.gson.annotations.SerializedName
