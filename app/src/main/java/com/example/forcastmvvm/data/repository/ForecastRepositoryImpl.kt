@@ -19,7 +19,7 @@ class ForecastRepositoryImpl (
 
     init {
         weatherNetworkDataSource.downloadedCurrentWeather.observeForever {
-            newCurrentWeather -> {
+            newCurrentWeather -> run {
                 presistFetchedCurrentWeather(newCurrentWeather)
             }
         }
