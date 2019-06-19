@@ -30,7 +30,6 @@ class CurrentWeatherFragment : ScopeFragment(), KodeinAware {
     override val kodein by closestKodein()
     private val viewModelFactory : CurrentWeatherViewModelFactory by instance()
 
-
     private lateinit var viewModel: CurrentWeatherViewModel
 
     override fun onCreateView(
