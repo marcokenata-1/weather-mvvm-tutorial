@@ -1,6 +1,6 @@
 package com.example.forcastmvvm.ui.weather.current
 
-import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModel
 import com.example.forcastmvvm.data.provider.UnitProvider
 import com.example.forcastmvvm.data.repository.ForecastRepository
 import com.example.forcastmvvm.internal.UnitSystem
@@ -22,4 +22,6 @@ class CurrentWeatherViewModel(
     val weatherLocation by lazyDeferred {
         forecastRepository.getWeatherLocation()
     }
+
+
 }
